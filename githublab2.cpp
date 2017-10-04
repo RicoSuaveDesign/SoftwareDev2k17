@@ -1,14 +1,19 @@
 #include <iostream>
 
 
-void square(int val);
+void power(int base, int expon);
 int main()
 {
-	square(12);
+	
 	return 0;
 }
 
-void square(int val)
+void power(int base, int expon)
 {
-	std::cout << val*val << std::endl;
+	int finalVal = base;
+	for (int i = 0; i < expon; i++)
+	{
+		finalVal *= base;
+	}
+	std::cout << finalVal << std::endl;
 }
